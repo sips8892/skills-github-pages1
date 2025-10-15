@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test User - Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        .profile {
+            margin-bottom: 30px;
+        }
+
+        .profile h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .profile p {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-button i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .facebook {
+            background: #1877f2;
+            color: white;
+        }
+
+        .facebook:hover {
+            background: #166fe5;
+            color: white;
+        }
+
+        .linkedin {
+            background: #0a66c2;
+            color: white;
+        }
+
+        .linkedin:hover {
+            background: #094a99;
+            color: white;
+        }
+
+        .email {
+            background: #ea4335;
+            color: white;
+        }
+
+        .email:hover {
+            background: #d93025;
+            color: white;
+        }
+
+        .discord {
+            background: #5865f2;
+            color: white;
+        }
+
+        .discord:hover {
+            background: #4752c4;
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+
+            .profile h1 {
+                font-size: 2rem;
+            }
+
+            .link-button {
+                padding: 12px 15px;
+                font-size: 0.9rem;
+            }
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <h1>Test User</h1>
+            <p>Welcome to my links!</p>
+        </div>
+
+        <div class="links">
+            <a href="Insert Link" class="link-button facebook">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
+
+            <a href="Insert Link" class="link-button linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                LinkedIn
+            </a>
+
+            <a href="mailto:Insert Link" class="link-button email">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+
+            <a href="Insert Link" class="link-button discord">
+                <i class="fab fa-discord"></i>
+                Discord
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Test User</p>
+    </div>
+</body>
+</html>
